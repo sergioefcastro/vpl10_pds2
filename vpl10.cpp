@@ -234,33 +234,33 @@ int main() {
         std::string cmd;
         iss >> cmd;
 
-        if (cmd == "t") {
+        if (cmd == "T") {
             std::string nome;
             iss >> nome;
             campeonato.cadastrar_treinador(nome);
-        } else if (cmd == "i") {
+        } else if (cmd == "I") {
             int idt;
             iss >> idt;
             campeonato.imprimir_informacoes_treinador(idt);
-        } else if (cmd == "e") {
+        } else if (cmd == "E") {
             int idt;
             std::string nome, tipo_ataque;
             double forca_ataque, potencia_raio;
             iss >> idt >> nome >> tipo_ataque >> forca_ataque >> potencia_raio;
             campeonato.cadastrar_pokemon_eletrico(idt, nome, tipo_ataque, forca_ataque, potencia_raio);
-        } else if (cmd == "q") {
+        } else if (cmd == "Q") {
             int idt;
             std::string nome, tipo_ataque;
             double forca_ataque, litros_jato;
             iss >> idt >> nome >> tipo_ataque >> forca_ataque >> litros_jato;
             campeonato.cadastrar_pokemon_aquatico(idt, nome, tipo_ataque, forca_ataque, litros_jato);
-        } else if (cmd == "x") {
+        } else if (cmd == "X") {
             int idt;
             std::string nome, tipo_ataque;
             double forca_ataque, temperatura_explosao;
             iss >> idt >> nome >> tipo_ataque >> forca_ataque >> temperatura_explosao;
             campeonato.cadastrar_pokemon_explosivo(idt, nome, tipo_ataque, forca_ataque, temperatura_explosao);
-        } else if (cmd == "h") {
+        } else if (cmd == "H") {
             int idt1, idpk1, idt2, idpk2;
             iss >> idt1 >> idpk1 >> idt2 >> idpk2;
             campeonato.executar_batalha(idt1, idpk1, idt2, idpk2);
